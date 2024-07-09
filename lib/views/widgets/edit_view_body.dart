@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:notes_app/views/widgets/custom_app_bar.dart';
+import 'package:notes_app/views/widgets/custom_text_field.dart';
 
 class EditViewBody extends StatelessWidget {
   const EditViewBody({super.key});
@@ -12,11 +13,22 @@ class EditViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 25,
+            height: 40,
           ),
           CustomAppBar(
             icon: FontAwesomeIcons.check,
             title: 'Edit Note',
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          CustomTextField(hintText: 'Title'),
+          SizedBox(
+            height: 20,
+          ),
+          CustomTextField(
+            hintText: 'Content',
+            maxLines: 5,
           )
         ],
       ),

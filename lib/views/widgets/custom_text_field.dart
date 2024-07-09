@@ -10,16 +10,20 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       cursorColor: kPrimaryColor,
       maxLines: maxLines,
-      decoration: InputDecoration(
-        hintText: hintText,
-        hintStyle: const TextStyle(
-          color: kPrimaryColor,
-        ),
-        enabledBorder: buildBorder(),
-        focusedBorder: buildBorder(kPrimaryColor),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+      decoration: customInputDecoration(),
+    );
+  }
+
+  InputDecoration customInputDecoration() {
+    return InputDecoration(
+      hintText: hintText,
+      hintStyle: const TextStyle(
+        color: kPrimaryColor,
+      ),
+      enabledBorder: buildBorder(),
+      focusedBorder: buildBorder(kPrimaryColor),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
       ),
     );
   }

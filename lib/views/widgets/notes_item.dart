@@ -7,7 +7,7 @@ class NotesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 20),
+      padding: const EdgeInsets.symmetric(vertical: 4),
       child: Container(
         padding: const EdgeInsets.only(
           top: 24,
@@ -34,7 +34,7 @@ class NotesItem extends StatelessWidget {
                   'Build your carrer with tharwat samy',
                   style: TextStyle(
                     color: Colors.black.withOpacity(0.5),
-                    fontSize: 18,
+                    fontSize: 16,
                   ),
                 ),
               ),
@@ -52,7 +52,7 @@ class NotesItem extends StatelessWidget {
               child: Text(
                 'May 15,2003',
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 14,
                   color: Colors.black.withOpacity(
                     0.5,
                   ),
